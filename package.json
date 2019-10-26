@@ -1,0 +1,30 @@
+{
+  "name": "ywc_chimshopchai",
+  "version": "0.0.1",
+  "description": "Homework for YWC Programming branch",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pontakornth/ywc_chimshopchai.git"
+  },
+  "keywords": [
+    "YWC"
+  ],
+  "author": "pontakornth",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pontakornth/ywc_chimshopchai/issues"
+  },
+  "homepage": "https://github.com/pontakornth/ywc_chimshopchai#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-purgecss": "^2.1.3"
+  },
+  "dependencies": {
+    "bulma": "^0.8.0",
+    "sass": "^1.23.1"
+  }
+}
