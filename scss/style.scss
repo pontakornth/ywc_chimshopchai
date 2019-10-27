@@ -1,8 +1,40 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
 @import "./NavBar.scss";
 @import "./Cover.scss";
+@import "./Grid.scss";
+@import "./Card.scss";
+
+html {
+    display: flex;
+    flex-direction: column;
+    
+}
 
 *, ::before, ::after {
     box-sizing: border-box;
+    font-family: "Bai Jamjuree", serif;
 }
+
+p {
+    font-family: "Bai Jamjuree";
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Prompt", sans-serif;
+    &.Date {
+        font-size: 48px;
+        color: red;
+    }
+} 
+
+.Header {
+    text-align: center;
+    margin-top: -10px ;
+
+}
+
+span.nobreak {
+    white-space: nowrap;
+  }
