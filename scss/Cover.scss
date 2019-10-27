@@ -1,15 +1,36 @@
 @import "./mixins.scss";
+
+@mixin CoverBG($url) {
+    width: 33.333%;
+    background: no-repeat url($url);
+    background-size: cover;
+    @media screen and (max-width: $viewport-small) {
+        height: 221px;
+    }
+    @media screen and (max-width: $viewport-medium) {
+        height: 242px;
+    }
+}
 .Cover {
     width: 100%;
     @include FlexRow;
     height: 350px;
-    .__left {
-        background: no-repeat url('../assets/banner-left.png');
+    &__left {
+        @include CoverBG($url : '../assets/banner-left.png');
     }
-    .__center {
-        background: no-repeat url('../assets/banner-center.png');
+    &__center {
+        @include CoverBG($url : '../assets/banner-center.png');
+        @include FlexRow;
+        justify-content: center;
+        align-items: center;
     }
-    .__right {
-        background: no-repeat url('../assets/banner-right.png');
+    &__right {
+        @include CoverBG($url :'../assets/banner-right.png');
+    }
+    &__logo {
+        display: block;
+        width: 80%;
+        height: auto;
+        max-width: 250px;
     }
 }

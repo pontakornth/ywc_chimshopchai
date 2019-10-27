@@ -2,3 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree|Prompt&display=swap');
 @import "./NavBar.scss";
 @import "./Cover.scss";
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
