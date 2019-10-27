@@ -1,0 +1,15 @@
+@import "./mixins.scss";
+.Cover {
+    width: 100%;
+    @include FlexRow;
+    height: 350px;
+    .__left {
+        background: no-repeat url('../assets/banner-left.png');
+    }
+    .__center {
+        background: no-repeat url('../assets/banner-center.png');
+    }
+    .__right {
+        background: no-repeat url('../assets/banner-right.png');
+    }
+}

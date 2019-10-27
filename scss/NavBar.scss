@@ -1,0 +1,21 @@
+@import './mixins.scss';
+.NavBar {
+    @include FlexRow;
+    justify-content: center;
+    &__group {
+        @include FlexRow;
+        height: inherit;
+        width: 32.3%;
+        justify-content: center;
+    }
+    &__item {
+        height: inherit;
+        @include FlexRow;
+        padding: 15px 15px 18px 15px;
+        font-family: "Prompt", sans-serif;
+        &:hover {
+            border-bottom: 6px solid indigo;
+            color: indigo;
+        }
+    }
+}
