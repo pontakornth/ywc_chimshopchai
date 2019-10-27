@@ -3,6 +3,7 @@
 @import "./Cover.scss";
 @import "./Grid.scss";
 @import "./Card.scss";
+@import "./Animation.scss";
 
 html {
     display: flex;
@@ -34,6 +35,6 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-span.nobreak {
+span.nowrap {
     white-space: nowrap;
 }
