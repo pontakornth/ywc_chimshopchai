@@ -1,0 +1,45 @@
+@each $name, $color in $colors-map {
+    .Text--#{$name} {
+        color: $color;
+    }
+    .Background--#{$name} {
+        background-color: $color;
+    }
+}
+
+$font-sizes-map : (
+    "regular" : 16px,
+    "medium" : 24px,
+    "large": 32px,
+    "heading" : 48px
+);
+
+@each $name, $size in $font-sizes-map {
+    .Text--#{$name} {
+        font-size: $size;
+    }
+}
+
+$font-weights : 100,200,300,400,500,600,700,800;
+@each $weight in $font-weights {
+    .Text--weight-#{$weight} {
+        font-weight: $weight;
+    }
+}
+
+@each $align in left,center,right {
+    .Text--align-#{$align} {
+        text-align: $align;
+    }
+}
+
+
+
+.Text {
+    &--header {
+        font-family: "Prompt", sans-serif;
+    }
+    &--bold {
+        text-decoration: bold;
+    }
+}
