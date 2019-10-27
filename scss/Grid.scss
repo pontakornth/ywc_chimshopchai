@@ -25,4 +25,12 @@ $systems: 3,5,10,12;
             }
         }
     }
+    &__fullimg {
+        width: 100%;
+        height: auto;
+    }
+    &__halfimg {
+        width: 40%;
+        height: auto;
+    }
 }
