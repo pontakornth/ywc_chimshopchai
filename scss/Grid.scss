@@ -8,12 +8,20 @@
     text-align: center;
     align-items: center;
 }
-
+$systems: 3,5,10,12;
 .Grid {
+    @include FlexCentered;
+    @include FlexRow;
     &--fullwidth {
         width: 100%;
     }
-    &--8-10  {
-        width: 80%;
+
+    
+    @each $system in $systems {
+        @for $size from 1 to $system {
+            &--#{$size}-#{$system} {
+                width: (100% / $system * $size) - 0.5%;
+            }
+        }
     }
 }

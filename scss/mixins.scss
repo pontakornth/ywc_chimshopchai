@@ -9,8 +9,32 @@
     flex-direction: column;
 }
 
+@mixin  FlexCentered {
+    justify-content: center;
+    align-items: center;
+}
+
+.Flex {
+    &--column {
+        @include FlexColumn;
+    }
+    &--row {
+        @include FlexRow;
+    }
+    &--centered {
+        @include FlexCentered;
+    }
+}
+
+
 $viewport-small: 577px;
 $viewport-medium: 769px;
+
+$viewport-maps: (
+    "small" : $viewport-small,
+    "medium": $viewport-medium, 
+);
+
 
 $colors-map : (
 "blue": #007bff,
