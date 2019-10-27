@@ -27,3 +27,12 @@
     
     }
 }
+
+
+.Register {
+    transition: all 0.25s ease-out;
+    &:hover {
+        background-color: map-get($colors-map, "yellow" );
+        box-shadow: none;
+    }
+}
