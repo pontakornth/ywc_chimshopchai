@@ -21,10 +21,11 @@ $systems: 3,10,12;
 @mixin Size {
     @each $system in $systems {
         @for $size from 1 to ($system + 1) {
-            &--#{$size}-#{$system}--small {
-                @media screen and (max-width: $viewport-small) {
-                width: (100% / $system * $size) - 0.5%;
-                border: 1px solid black;
+            @each $viewport, $v-size in $viewport-maps {
+                &--#{$size}-#{$system}--#{$viewport} {
+                    @media screen and (max-width: $v-size) {
+                    width: (100% / $system * $size) - 0.5%;
+                    }
                 }
             }
             &--#{$size}-#{$system} {
