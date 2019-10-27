@@ -4,5 +4,63 @@
 
 }
 
+@mixin FlexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
 $viewport-small: 577px;
 $viewport-medium: 769px;
+
+$colors-map : (
+"blue": #007bff,
+"indigo": #213A8F,
+"purple": #6f42c1,
+"pink": #e83e8c,
+"red": #dc3545,
+"orange": #fd7e14,
+"yellow": #ffc107,
+"green": #28a745,
+"teal": #20c997,
+"cyan": #17a2b8,
+"white": #fff,
+"gray": #6c757d,
+"gray-dark": #343a40,
+"primary": #007bff,
+"secondary": #6c757d,
+"success": #28a745,
+"info": #17a2b8,
+"warning": #ffc107,
+"danger": #dc3545,
+"light": #f8f9fa,
+"dark": #343a40
+);
+
+@each $name, $color in $colors-map {
+    .Text--#{$name} {
+        color: $color;
+    }
+    .Background--#{$name} {
+        background-color: $color;
+    }
+}
+
+$font-sizes-map : (
+    "regular" : 16px,
+    "medium" : 24px,
+    "large": 32px,
+    "heading" : 48px
+);
+
+@each $name, $size in $font-sizes-map {
+    .Text--#{$name} {
+        font-size: $size;
+    }
+}
+
+$font-weights : 100,200,300,400,500,600,700,800;
+@each $weight in $font-weights {
+    .Text--weight-#{$weight} {
+        font-weight: $weight;
+    }
+}
