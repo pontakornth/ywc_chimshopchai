@@ -4,12 +4,6 @@
     width: 33.333%;
     background: no-repeat url($url);
     background-size: cover;
-    @media screen and (max-width: $viewport-small) {
-        height: 221px;
-    }
-    @media screen and (max-width: $viewport-medium) {
-        height: 242px;
-    }
 }
 .Cover {
     width: 100%;
@@ -32,5 +26,11 @@
         width: 80%;
         height: auto;
         max-width: 250px;
+    }
+    @media screen and (max-width: $viewport-small) {
+        height: 221px;
+    }
+    @media screen and (max-width: $viewport-medium) {
+        height: 242px;
     }
 }
