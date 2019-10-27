@@ -20,6 +20,15 @@
     }
     &--row {
         @include FlexRow;
+        &--left {
+            justify-content: flex-start;
+        }
+        &--center {
+            justify-content: center;
+        }
+        &--right {
+            justify-content: flex-end;
+        }
     }
     &--centered {
         @include FlexCentered;
@@ -87,4 +96,14 @@ $font-weights : 100,200,300,400,500,600,700,800;
     .Text--weight-#{$weight} {
         font-weight: $weight;
     }
+}
+
+@each $align in left,center,right {
+    .Text--align-#{$align} {
+        text-align: $align;
+    }
+}
+
+@mixin Padded {
+    padding: 32px 15px 8px 15px;
 }
