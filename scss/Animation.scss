@@ -1,0 +1,11 @@
+@import "./mixins.scss";
+
+
+.Animation {
+    &--hover-scale-up {
+        transition: all 0.5s ease-out;
+        &:hover {
+            transform: scale(1.5);
+        }        
+    }
+}
