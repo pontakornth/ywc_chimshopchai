@@ -26,11 +26,16 @@ $systems: 3,5,10,12;
         }
     }
     &__fullimg {
-        width: 100%;
+        width: 80%;
         height: auto;
     }
     &__halfimg {
         width: 40%;
         height: auto;
     }
+}
+
+.Footer {
+    @include FlexColumn;
+    margin-top: auto;
 }
