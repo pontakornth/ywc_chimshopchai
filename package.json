@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "bulma": "^0.8.0",
+    "normalize.css": "^8.0.1",
     "sass": "^1.23.1"
   }
 }
