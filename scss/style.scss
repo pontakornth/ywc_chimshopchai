@@ -1,6 +1,4 @@
 @import "../node_modules/normalize.css/normalize.css";
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&family=Prompt&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap');
 @import "./NavBar.scss";
 @import "./Cover.scss";
 @import "./Grid.scss";
@@ -14,15 +12,15 @@ html {
 
 *, ::before, ::after {
     box-sizing: border-box;
-    font-family: "Bai Jamjuree", serif;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 p {
-    font-family: "Bai Jamjuree";
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: "Prompt", sans-serif;
+    font-family: 'Prompt', sans-serif;
     &.Date {
         font-size: 48px;
         color: red;
