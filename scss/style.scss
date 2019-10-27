@@ -9,6 +9,7 @@ html {
     display: flex;
     flex-direction: column;
     line-height: 1.8;
+    min-height: 100vh;
     
 }
 
@@ -37,4 +38,8 @@ h1,h2,h3,h4,h5,h6 {
 
 span.nowrap {
     white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
 }
