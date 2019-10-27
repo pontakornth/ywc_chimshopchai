@@ -15,8 +15,9 @@ $systems: 3,5,10,12;
     &--fullwidth {
         width: 100%;
     }
-
-    
+    &--padded {
+        @include Padded;
+    }
     @each $system in $systems {
         @for $size from 1 to $system {
             &--#{$size}-#{$system} {
