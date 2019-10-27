@@ -1,6 +1,18 @@
+$viewport-small: 577px;
+$viewport-medium: 769px;
+
+$viewport-maps: (
+    "small" : $viewport-small,
+    "medium": $viewport-medium, 
+);
+
+
 @mixin FlexRow {
     display: flex;
     flex-direction: row;
+    @media screen and(max-width: $viewport-small) {
+        flex-direction: column;
+    }
 
 }
 
@@ -29,6 +41,11 @@
         &--right {
             justify-content: flex-end;
         }
+        &--small {
+            @media screen and (max-width:$viewport-small) {
+                flex-flow: row;
+            }
+        }
     }
     &--centered {
         @include FlexCentered;
@@ -36,13 +53,6 @@
 }
 
 
-$viewport-small: 577px;
-$viewport-medium: 769px;
-
-$viewport-maps: (
-    "small" : $viewport-small,
-    "medium": $viewport-medium, 
-);
 
 
 $colors-map : (
@@ -69,47 +79,14 @@ $colors-map : (
 "dark": #242729
 );
 
-@each $name, $color in $colors-map {
-    .Text--#{$name} {
-        color: $color;
-    }
-    .Background--#{$name} {
-        background-color: $color;
-    }
-}
-
-$font-sizes-map : (
-    "regular" : 16px,
-    "medium" : 24px,
-    "large": 32px,
-    "heading" : 48px
-);
-
-@each $name, $size in $font-sizes-map {
-    .Text--#{$name} {
-        font-size: $size;
-    }
-}
-
-$font-weights : 100,200,300,400,500,600,700,800;
-@each $weight in $font-weights {
-    .Text--weight-#{$weight} {
-        font-weight: $weight;
-    }
-}
-
-@each $align in left,center,right {
-    .Text--align-#{$align} {
-        text-align: $align;
-    }
-}
 
 @mixin Padded {
     padding: 32px 15px 8px 15px;
 }
 
-.Text {
-    &--header {
-        font-family: "Prompt", sans-serif;
+.Padded {
+    &--half {
+        padding: 8px 15px 8px 15px;
     }
 }
+@import "./Typography.scss";
