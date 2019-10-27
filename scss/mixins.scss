@@ -66,7 +66,7 @@ $colors-map : (
 "warning": #ffc107,
 "danger": #dc3545,
 "light": #f8f9fa,
-"dark": #343a40
+"dark": #242729
 );
 
 @each $name, $color in $colors-map {
@@ -106,4 +106,10 @@ $font-weights : 100,200,300,400,500,600,700,800;
 
 @mixin Padded {
     padding: 32px 15px 8px 15px;
+}
+
+.Text {
+    &--header {
+        font-family: "Prompt", sans-serif;
+    }
 }
