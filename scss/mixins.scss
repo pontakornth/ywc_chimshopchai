@@ -7,11 +7,13 @@ $viewport-maps: (
 );
 
 
-@mixin FlexRow {
+@mixin FlexRow($force-on-mobile: false) {
     display: flex;
     flex-direction: row;
-    @media screen and(max-width: $viewport-small) {
-        flex-direction: column;
+    @if ($force-on-mobile != true) {
+        @media only screen and(max-width: $viewport-small) {
+            flex-direction: column;
+        }   
     }
 
 }
@@ -42,13 +44,16 @@ $viewport-maps: (
             justify-content: flex-end;
         }
         &--small {
-            @media screen and (max-width:$viewport-small) {
+            @media only screen and (max-width:$viewport-small) {
                 flex-flow: row;
             }
         }
     }
     &--centered {
         @include FlexCentered;
+    }
+    &--wrap {
+        flex-wrap: wrap;
     }
 }
 
@@ -82,6 +87,10 @@ $colors-map : (
 
 @mixin Padded {
     padding: 32px 15px 8px 15px;
+}
+
+@mixin HalfPadded {
+    padding: 8px 15px 8px 15px;
 }
 
 .Padded {
