@@ -79,3 +79,9 @@ $systems: 3,10,12;
     margin-top: auto;
     font-size: 14px;
 }
+
+.Copyright {
+    @media screen and (min-width: $viewport-small) and (max-width: $viewport-medium) {
+        width: 100%;
+    }
+}
