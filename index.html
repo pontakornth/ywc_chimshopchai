@@ -13,13 +13,24 @@
 
 <body>
     <nav class="NavBar" role="navigation">
+        <div class="NavBar__menu">
+                <a href="#" class="NavBar__item NavBar__logo"><img class="Grid__fullimg" src="./assets/footer.png"></a>
+                <a href="#" class="NavBar__item NavBar__burger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
+        </div>
         <div class="NavBar__group">
             <a href="#" class="NavBar__item">ลงทะเบียนเข้าร่วมมาตรการ</a>
             <a href="#" class="NavBar__item">ขั้นตอนการเข้าร่วม</a>
             <a href="#" class="NavBar__item">ร้านค้าที่เข้าร่วม</a>
         </div>
     </nav>
-    <div class="Cover">
+    <div class="Spacer">
+           
+    </div>
+    <div class="Cover Flex--row--small">
         <div class="Cover__left"></div>
         <div class="Cover__center">
             <img class="Cover__logo" src="./assets/banner.png">
@@ -45,11 +56,11 @@
         </div>
         <div class="Grid Grid--padded Text--align-left Flex--row--left  Grid--fullwidth">
             <div>
-                <h1 class="Text--red Text--heading Text--weight-500">
+                <h1 class="Text--heading Text--large--medium Text--red Text--weight-500">
                     มาตรการส่งเสริมการบริโภค<br>
                     ในประเทศ “ชิมช้อปใช้”
                 </h1>
-                <div class="Grid--7-10">
+                <div class="Grid--7-10 Grid--9-10--medium">
                     ผู้สนใจเข้าร่วมมาตรการส่งเสริมการบริโภคในประเทศ <span class="nowrap">“ชิมช้อปใช้”</span> รับเงินผ่าน
                     <span class="nowrap">“เป๋าตัง”</span> <span class="nowrap">(G-Wallet)</span> รวมจำนวน 13 ล้านคน
                     ลงทะเบียนรับสิทธิ ได้ทางเว็บไซต์ <span class="nowrap">www.ชิมช้อปใช้.com</span> <br> ตั้งแต่วันที่
@@ -66,21 +77,21 @@
                 </p>
             </div>
         </div>
-        <div class="Grid Flex--centered Grid--fullwidth Grid--padded">
-            <div class="Grid Grid--1-3 Grid--12-12--small">
+        <div class="Grid Flex--wrap Flex--centered Grid--fullwidth Grid--padded">
+            <div class="Grid Grid--12-12--medium Grid--1-3 ">
                 <a href="tel:021111144"><img class="Grid__fullimg" src="./assets/Banner_KTB_SQ_left.png"></a>
             </div>
-            <div class="Grid Grid--1-3 Grid--12-12--small">
+            <div class="Grid Grid--1-3 Grid--12-12--medium">
                 <a href="tel:022706400"><img class="Grid__fullimg" src="./assets/Banner_CGD_Sq_center.png"></a>
             </div>
-            <div class="Grid Grid--1-3 Grid--12-12--small">
+            <div class="Grid Grid--1-3 Grid--12-12--medium">
                 <a href="tel:1672"><img class="Grid__fullimg" src="./assets/Banner_TAT_Hotline_Sq_right.png"></a>
             </div>
         </div>
     </div>
     <footer class="Footer">
         <div class="Container">
-                <div class="Grid Flex--row--small Grid--fullwidth Grid--padded">
+                <div class="Grid Flex--row--small Flex--wrap Grid--fullwidth Grid--padded">
                         <div class="Grid Grid--2-12 Grid--4-12--small">
                             <a class="Animation--hover-scale-up" href="#"><img class="Grid__halfimg" src="./assets/MOF_1.png"></a>
                         </div>
@@ -102,13 +113,13 @@
                 </div>
         </div>
         <div class="Grid Grid--fullwidth  Background--light">
-                <div class="Container Flex--row">
-                    <div class="Grid Grid--3-12">
-                        <div class="Grid--9-12">
+                <div class="Container Flex--wrap Flex--row">
+                    <div class="Grid Flex--row--left Grid--3-12 Grid--12-12--medium">
+                        <div class="Grid FooterLogo  Grid--9-12 ">
                             <img class="Grid__halfimg" src="./assets/footer.png">
                         </div>
                     </div>
-                    <div class="Grid Grid--3-12 Text--align-left">
+                    <div class="Grid Grid--3-12 Grid--12-12--small Grid--4-12--medium Text--align-left">
                         <p class="Grid--9-12">
                                 <span class="Text--red Text--weight-800">
                                     ข้อมูลลงทะเบียนประชาชน
@@ -117,7 +128,7 @@
                                 ติดต่อ ชิมช้อปใช้ Call Center by Krungthai โทร.0 2111 1144<br>                               
                         </p>
                     </div>
-                    <div class="Grid Grid--3-12 Text--align-left">
+                    <div class="Grid Grid--3-12 Grid--12-12--small Grid--4-12--medium Text--align-left">
                         <p class="Grid--9-12">
                                 <span class="Text--red Text--weight-800">
                                 ข้อมูลลงทะเบียนผู้ประกอบการ
@@ -126,7 +137,7 @@
                                 ติดต่อ โทร.0 2270 6400 กด 7<br>
                         </p>
                     </div>
-                    <div class="Grid Grid--3-12 Text--align-left ">
+                    <div class="Grid Grid--3-12 Grid--12-12--small Grid--4-12--medium Text--align-left ">
                         <p class="Grid--9-12">
                                 <span class="Text--red Text--weight-800">
                                 ข้อมูลเที่ยวชิมช้อปใช้
@@ -139,19 +150,20 @@
         </div>
         <div class="Grid Grid--fullwidth Background--indigo Text--light">
             <div class="Grid Padded--half Text--header Text--weight-800 Flex--row Grid--8-10">
-                <div class="Grid Grid--3-12">Copyright © 2003-2019</div>
-                <div class="Grid Grid--3-12">
-                    ลงทะเบียนเข้าร่วมมาตรการ
+                <div class="Grid Grid--halfpadded--small Grid--3-12 Grid--12-12--small">Copyright © 2003-2019</div>
+                <div class="Grid Grid--halfpadded--small Grid--3-12 Grid--12-12--small">
+                    <a class="Text--light" href="#">ลงทะเบียนเข้าร่วมมาตรการ</a>
                 </div>
-                <div class="Grid Grid--3-12">
-                    ขั้นตอนการเข้าร่วมทั้งหมด
+                <div class="Grid Grid--halfpadded--small Grid--3-12 Grid--12-12--small">
+                    <a class="Text--light" href="#">ขั้นตอนการเข้าร่วมทั้งหมด</a>
                 </div>
-                <div class="Grid Grid--3-12">
-                    รายชื่อร้านค้าที่เข้าร่วมรายการ
+                <div class="Grid Grid--halfpadded--small Grid--3-12 Grid--12-12--small">
+                    <a class="Text--light" href="#">รายชื่อร้านค้าที่เข้าร่วมรายการ</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
