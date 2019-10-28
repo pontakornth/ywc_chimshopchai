@@ -36,3 +36,9 @@
         box-shadow: none;
     }
 }
+
+.Logo {
+    @media screen and (min-width: $viewport-small) and (max-width: $viewport-medium) {
+        width: 50%;
+    }
+}
