@@ -17,7 +17,18 @@ $font-sizes-map : (
 @each $name, $size in $font-sizes-map {
     .Text--#{$name} {
         font-size: $size;
+        
     }
+}
+
+@each $name, $size in $font-sizes-map {
+@each $viewport,$v-size in $viewport-maps {
+    .Text--#{$name}--#{$viewport} {
+        @media screen and (max-width: $v-size) {
+            font-size: $size;
+        }
+    }
+}
 }
 
 $font-weights : 100,200,300,400,500,600,700,800;
