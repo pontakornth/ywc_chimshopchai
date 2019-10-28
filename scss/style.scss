@@ -43,3 +43,14 @@ span.nowrap {
 a {
     text-decoration: none;
 }
+
+.FooterLogo {
+    justify-content: center;
+    @media screen and (max-width: $viewport-medium) {
+        justify-content: flex-start;
+        padding-left: 4%;
+        img {
+            width: 25%;
+        }
+    }
+}
