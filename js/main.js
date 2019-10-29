@@ -22,6 +22,13 @@ document.addEventListener("DOMContentLoaded", () => {
         detail.innerHTML = data.detail;
         const condition = document.getElementById('condition');
         condition.innerHTML = data.condition;
+        const footer = document.getElementById('footer');
+        const footerLinks = footer.getElementsByTagName('A');
+        console.log(footerLinks);
+        for (var i = 0; i < footerLinks.length; i++) {
+            footerLinks[i].href = data.navbarItems[i].href;
+            footerLinks[i].target = "__blank";
+        }
     }
     
     const burger = document.querySelector('.NavBar__burger');
