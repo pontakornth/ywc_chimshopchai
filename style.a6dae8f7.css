@@ -678,6 +678,8 @@ template {
   background-color: #fff;
   width: 100%;
   z-index: 9999;
+  top: 0;
+  left: 0;
 }
 @media only screen and (max-width: 577px) {
   .NavBar {
@@ -2257,16 +2259,6 @@ template {
 .Card--indigo--shadow {
   box-shadow: 0px 10px 31px 2px rgba(33, 58, 143, 0.75);
 }
-.Card--has-divider ::after {
-  position: absolute;
-  bottom: 35%;
-  right: -100%;
-  content: "";
-  width: 9999999999999px;
-  height: 1px;
-  z-index: -1;
-  background-color: rgba(33, 58, 143, 0.3);
-}
 
 .Register {
   transition: all 0.25s ease-out;
@@ -2611,11 +2603,15 @@ template {
   transform: scale(1.5);
 }
 
-html {
+body {
   display: flex;
   flex-direction: column;
   line-height: 1.8;
   min-height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 *, ::before, ::after {
