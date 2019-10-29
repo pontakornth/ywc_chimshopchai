@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             Link.classList.add("NavBar__item");
             NavBar__group.appendChild(Link);
         });
+        NavBar__group.removeChild(document.getElementById('placeholder-link'));
         const duration = document.getElementById('duration');
         duration.innerHTML = data.duration;
         const detail = document.getElementById('detail');
