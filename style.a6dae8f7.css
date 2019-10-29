@@ -1146,7 +1146,9 @@ template {
 }
 @media screen and (max-width: 577px) {
   .Cover__left {
-    background: no-repeat url(/banner-left-s.200a6ff4.png);
+    width: 33.333%;
+    background: no-repeat url("/banner-left-s.200a6ff4.png");
+    background-size: cover;
   }
 }
 .Cover__center {
@@ -1165,7 +1167,9 @@ template {
 }
 @media screen and (max-width: 577px) {
   .Cover__center {
-    background: no-repeat url(/banner-center-s.3cfb21e9.png);
+    width: 33.333%;
+    background: no-repeat url("/banner-center-s.3cfb21e9.png");
+    background-size: cover;
   }
 }
 .Cover__right {
@@ -1175,7 +1179,9 @@ template {
 }
 @media screen and (max-width: 577px) {
   .Cover__right {
-    background: no-repeat url(/banner-right-s.864ea782.png);
+    width: 33.333%;
+    background: no-repeat url("/banner-right-s.864ea782.png");
+    background-size: cover;
   }
 }
 .Cover__logo {
