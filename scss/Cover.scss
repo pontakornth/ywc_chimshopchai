@@ -11,15 +11,24 @@
     height: 350px;
     &__left {
         @include CoverBG($url : '../assets/banner-left.png');
+        @media screen and (max-width: $viewport-small) {
+            background: no-repeat url(../assets/banner-left-s.png);
+        }
     }
     &__center {
         @include CoverBG($url : '../assets/banner-center.png');
         @include FlexRow;
         justify-content: center;
         align-items: center;
+        @media screen and (max-width: $viewport-small) {
+            background: no-repeat url(../assets/banner-center-s.png);
+        }
     }
     &__right {
         @include CoverBG($url :'../assets/banner-right.png');
+        @media screen and (max-width: $viewport-small) {
+            background: no-repeat url(../assets/banner-right-s.png);
+        }
     }
     &__logo {
         display: block;
