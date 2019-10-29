@@ -12,7 +12,7 @@
     &__left {
         @include CoverBG($url : '../assets/banner-left.png');
         @media screen and (max-width: $viewport-small) {
-            background: no-repeat url(../assets/banner-left-s.png);
+            @include CoverBG('../assets/banner-left-s.png');
         }
     }
     &__center {
@@ -21,13 +21,13 @@
         justify-content: center;
         align-items: center;
         @media screen and (max-width: $viewport-small) {
-            background: no-repeat url(../assets/banner-center-s.png);
+            @include CoverBG('../assets/banner-center-s.png');
         }
     }
     &__right {
         @include CoverBG($url :'../assets/banner-right.png');
         @media screen and (max-width: $viewport-small) {
-            background: no-repeat url(../assets/banner-right-s.png);
+            @include CoverBG('../assets/banner-right-s.png');
         }
     }
     &__logo {
