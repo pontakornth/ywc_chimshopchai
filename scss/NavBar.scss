@@ -7,6 +7,8 @@
     background-color: map-get($map: $colors-map, $key: "white");
     width: 100%;
     z-index: 9999;
+    top: 0;
+    left: 0;
 
     &__menu {
         @include FlexRow(true);
@@ -28,6 +30,7 @@
         justify-content: center;
         visibility: visible;
         transition: .5s ease-in-out;
+        background: map-get($map: $colors-map, $key: "white");
         @media screen and (max-width: $viewport-small) {
             position: absolute;
             top: 100%;
