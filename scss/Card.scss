@@ -12,20 +12,6 @@
     width: auto;
     margin: 0;
     position: relative;
-    &--has-divider {
-        ::after {
-            position: absolute;
-            bottom: 35%;
-            right: -100%;
-            content: "";
-            width: 9999999999999px;
-            height: 1px;
-            z-index: -1;
-            background-color: rgba(map-get($colors-map, "indigo"),0.3);
-
-        }
-    
-    }
 }
 
 
