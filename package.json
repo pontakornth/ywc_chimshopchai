@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/pontakornth/ywc_chimshopchai#readme",
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-purgecss": "^2.1.3"
   },
