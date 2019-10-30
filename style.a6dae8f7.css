@@ -708,6 +708,7 @@ template {
   justify-content: center;
   visibility: visible;
   transition: 0.5s ease-in-out;
+  background: #fff;
 }
 @media only screen and (max-width: 577px) {
   .NavBar__group {
