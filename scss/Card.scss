@@ -15,6 +15,12 @@
     @media screen and (max-width: $viewport-medium){
         width: 90%;
     }
+    @media screen and (max-width: $viewport-small) {
+        h2 {
+            font-size: 20px;
+        }
+    }
+    
 }
 
 

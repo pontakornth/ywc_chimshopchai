@@ -31,6 +31,9 @@ h1,h2,h3,h4,h5,h6 {
     &.Date {
         font-size: 48px;
         color: red;
+        @media screen and (max-width: $viewport-medium) {
+            font-size: 30;
+        }
     }
 } 
 
