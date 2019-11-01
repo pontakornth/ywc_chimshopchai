@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6 {
         font-size: 48px;
         color: red;
         @media screen and (max-width: $viewport-medium) {
-            font-size: 30;
+            font-size: 30px;
         }
     }
 } 
@@ -70,4 +70,10 @@ a {
     @media screen and (max-width: $viewport-small) {
         visibility: hidden;
     }
+}
+
+
+.Container--closer {
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
 }
