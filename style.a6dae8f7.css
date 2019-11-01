@@ -2654,7 +2654,7 @@ h1.Date, h2.Date, h3.Date, h4.Date, h5.Date, h6.Date {
 }
 @media screen and (max-width: 769px) {
   h1.Date, h2.Date, h3.Date, h4.Date, h5.Date, h6.Date {
-    font-size: 30;
+    font-size: 30px;
   }
 }
 
@@ -2694,6 +2694,11 @@ a {
   .DivideLine {
     visibility: hidden;
   }
+}
+
+.Container--closer {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 /*# sourceMappingURL=/style.a6dae8f7.css.map */
