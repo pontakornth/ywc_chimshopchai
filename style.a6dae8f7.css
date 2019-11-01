@@ -2265,6 +2265,11 @@ template {
     width: 90%;
   }
 }
+@media screen and (max-width: 577px) {
+  .Card h2 {
+    font-size: 20px;
+  }
+}
 
 .Register {
   position: relative;
@@ -2646,6 +2651,11 @@ h1, h2, h3, h4, h5, h6 {
 h1.Date, h2.Date, h3.Date, h4.Date, h5.Date, h6.Date {
   font-size: 48px;
   color: red;
+}
+@media screen and (max-width: 769px) {
+  h1.Date, h2.Date, h3.Date, h4.Date, h5.Date, h6.Date {
+    font-size: 30;
+  }
 }
 
 .Header {
