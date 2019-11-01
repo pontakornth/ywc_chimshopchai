@@ -12,10 +12,15 @@
     width: auto;
     margin: 0;
     position: relative;
+    @media screen and (max-width: $viewport-medium){
+        width: 90%;
+    }
 }
 
 
 .Register {
+    position: relative;
+    z-index: 300;
     transition: all 0.25s ease-out;
     &:hover {
         background-color: map-get($colors-map, "yellow" );
@@ -27,4 +32,13 @@
     @media screen and (min-width: $viewport-small) and (max-width: $viewport-medium) {
         width: 50%;
     }
+}
+
+.Centered {
+    width: 100%;
+}
+
+.LargeButton {
+    display: flex;
+    justify-content: center;
 }

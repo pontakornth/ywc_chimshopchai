@@ -58,3 +58,13 @@ a {
         }
     }
 }
+
+.DivideLine {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    width: 100%;
+    transform: translateY(-54px);
+    z-index: 2;
+    @media screen and (max-width: $viewport-small) {
+        visibility: hidden;
+    }
+}
